@@ -1,0 +1,60 @@
+/* Importamos las fuentes a utilizar */
+@font-face {
+    font-family: 'Crobor';
+    src: url('../fonts/Crobor.otf' );
+}
+@font-face {
+    font-family: 'AvenirLTStd-Medium';
+    src: url('../fonts/AvenirLTStd-Medium.otf');
+}
+@font-face {
+    font-family: 'Anta';
+    src: url('../fonts/Anta-Regular.ttf');
+}
+
+/* Variables de css */
+:root{
+    --textoCrobor: 'Crobor', sans-serif;
+    --textoAvenir: 'AvenirLTStd-Medium', sans-serif;
+    --textoAnta: 'Anta', sans-serif;
+    --colorAzulClaro:#04B2D9;
+    --colorAzulmedioClaro: #049DD9;
+    --colorAzulMedio: #023E73;
+    --colorAzulOscuro:#0A0F26;
+    --colorNegroTransparencia:#00000043;
+    --colorNegro:#0D0D0D;
+    --colorBlanco:#FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--textoAvenir);
+}
+
+body {
+    width: 100%;
+    background-color: var(--colorNegro);
+    overflow-x: hidden;
+    color: var(--colorBlanco);
+}
+
+/* estilos del scroll */
+::-webkit-scrollbar {
+    background-color: var(--colorAzulMedio);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--colorAzulOscuro);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--colorAzulMedio);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--colorNegro);
+}
